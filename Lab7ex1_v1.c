@@ -18,21 +18,12 @@ int main()
     int prim,i;
     printf("Introdu un numar: ");
     scanf("%d", &n);
-    prim=check_prim();
-    //printf("Am obtinut valoarea %d \n", prim);
-        if (prim!= 0)
-        {
-            printf("Numarul %d este prim \n", n);
-            for (n=n+1;n>0;n++)
-            {
-                prim=check_prim();
-                if (prim!= 0)
-                    {printf ("Urmatorul numar prim este %d",n);
-                    return 0;
-                    }
-            }
-        }
-        else
-        printf("Numarul %d nu este prim", n);
+    //prim=check_prim();
+    if (check_prim() == 0)
+        printf("%d nu este numar prim \n",n);
+    n++;
+        while (check_prim() == 0)
+        n++;
+        printf("Urmatorul numar prim este %d",n);
     return 0;
 }
