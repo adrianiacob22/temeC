@@ -2,7 +2,8 @@
 #include <limits.h>
 /*1. Se citește un număr natural n>=3 . Folosind o funcție care verifică
 dacă un număr este prim sau nu, scrieți un program care afișează
-cel mai mic număr prim strict mai mare decât .*/
+cel mai mic număr prim strict mai mare decât .
+Fara functie*/
 
 int main()
 {

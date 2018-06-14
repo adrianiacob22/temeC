@@ -1,4 +1,4 @@
-45
+4
 un text in care cuvintele sunt despartite prin
 spatii si semnele de punctuatie uzuale. Scrieti un program care sa scrie
 in fisierul text cuvinte.out

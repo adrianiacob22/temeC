@@ -2,7 +2,9 @@
 #include <limits.h>
 #include <math.h>
 /*1. a.Scrieti o functie care verifica daca un numar este prim sau nu
-b.Fie n numar natural >=3, sa se determine cel mai mic numar prim mai mare decat numarul prim n */
+b.Fie n numar natural >=3, sa se determine cel mai mic numar prim mai mare decat numarul prim n
+In programul de mai jos, indiferent daca numarul introdus n este sau nu prim,
+se va afisa numarul prim mai mare decat n*/
 int n;
 int check_prim()
 {
@@ -13,7 +15,6 @@ int check_prim()
 }
 
 int main()
-
 {
     int prim,i;
     printf("Introdu un numar: ");

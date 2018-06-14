@@ -10,23 +10,24 @@ sau mesajul "Imposibil !" dacă în fișierul de intrare nu există nici un cuv�
 cu proprietatea cerută.*/
 void main()
 {
-    int i,n,next,lungime;
+    int i,n,next,lungime,gasit;
     char a[999];
     FILE *fisier,*out;
     fisier = fopen("cuvinte.txt", "r");
     out = fopen("cuvinte.out","w");
     fscanf(fisier, "%d", &n);
     printf("Citesc %d \n", n);
-    while (fscanf(fisier, "%s", a)!=EOF){
+    gasit = 0;
+    while(fscanf(fisier, "%s", a)!=EOF){
         //printf("%s",a);
         lungime=strlen(a);
-        if(lungime==n)
+        if(lungime==n){
         fprintf(out,"%s \n",a);
-        //printf("\nNumarul de caractere este %d \n",strlen(a));
-
+        gasit=1;
         }
-    if
-    printf("%d\n", lungime);
+    }
+    if(gasit ==0)
+        fprintf(out,"Imposibil! \n");
 
     fclose(fisier);
     fclose(out);
