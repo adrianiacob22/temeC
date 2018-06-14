@@ -9,6 +9,7 @@ int check_prim()
     int i,prim;
     for (i=2;i<=n/2;i++)
         if(n%i==0) return 0;
+    return 1;
 }
 
 int main()
@@ -18,7 +19,7 @@ int main()
     printf("Introdu un numar: ");
     scanf("%d", &n);
     prim=check_prim();
-    printf("Am obtinut valoarea %d \n", prim);
+    //printf("Am obtinut valoarea %d \n", prim);
         if (prim!= 0)
         {
             printf("Numarul %d este prim \n", n);
